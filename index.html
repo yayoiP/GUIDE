@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+ 
+    <title>ガイド</title>
+<style>
+body{
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+page{
+  display:none;
+}
+page:target{
+  display:block;
+}
+</style>
+</head>
+<body>
+<header class="hero" style="background: #FFFAC8;">
+  <div class="hero-body">
+    <h1 class="title">
+      ヘッダー
+    </h1>
+  </div>
+</header>
+<page id="home">
+<h1 class="title">ガイド</h1>
+<div class="container is-fluid">
+  <div class="inner-element">
+    このページはガイドです<Br>
+あぷりを直接Installできます。Gitがひつようです<br>
+<button value="test" onClick="dialo('現在の機能がありません')" class="button is-primary">インストール</button>
+</page>
+<script>
+function dialo(a){
+  alert(a)
+}
+window.onload = function() {
+    // 現在のハッシュ値を取得
+    let hash = window.location.hash;
+
+    // ハッシュが指定されていない場合、#homeへリダイレクト
+    if (!hash) {
+        window.location.hash = "#home";
+    }
+};
+
+</script>
+</body>
+</html>

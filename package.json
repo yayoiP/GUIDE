@@ -1,0 +1,15 @@
+{
+  "name": "Guide",
+  "productName": "ProtCore",
+  "description": "ガイド用template",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "yayoi",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^32.0.2"
+  }
+}
